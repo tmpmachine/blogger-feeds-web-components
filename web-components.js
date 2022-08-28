@@ -24,7 +24,7 @@
         let nodes = slot.assignedNodes();
         id = nodes[0].innerHTML.trim();
         
-        if (feedUrl !== null && id !== null) {
+        if (feedUrl !== null && id !== null && maxResults !== null) {
           window.feedThis(this, feedUrl, id, maxResults)
         }
       });
@@ -33,7 +33,7 @@
         let nodes = slot2.assignedNodes();
         feedUrl = nodes[0].innerHTML.trim();;
         
-        if (feedUrl !== null && id !== null) {
+        if (feedUrl !== null && id !== null && maxResults !== null) {
           window.feedThis(this, feedUrl, id, maxResults)
         }
       });
